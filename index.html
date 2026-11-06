@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABIRINTDAN CHIQISH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">⚡ LABIRINT</div>
+        <p>Yo‘lni top. Devorlarga tegma. Chiqishga yetib bor!</p>
+    </header>
+
+    <section class="stats">
+        <div class="stat">
+            <span>BOSQICH</span>
+            <strong id="level">1</strong>
+        </div>
+
+        <div class="stat">
+            <span>YURISHLAR</span>
+            <strong id="moves">0</strong>
+        </div>
+
+        <div class="stat">
+            <span>VAQT</span>
+            <strong id="time">0</strong>
+        </div>
+    </section>
+
+    <main class="game-card">
+
+        <div class="game-heading">
+            <h2>Qahramonni chiqishga olib bor!</h2>
+            <p>Yo‘laklardan yurib, 🏁 eshikka yetib bor.</p>
+        </div>
+
+        <div id="maze" class="maze"></div>
+
+        <div id="message" class="message">
+            O‘yinni boshlash uchun tugmani bosing!
+        </div>
+
+        <div class="controls">
+            <button class="control up" data-direction="up">▲</button>
+            <div class="control-row">
+                <button class="control" data-direction="left">◀</button>
+                <button class="control" data-direction="down">▼</button>
+                <button class="control" data-direction="right">▶</button>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="startBtn" class="start-btn">O‘YINNI BOSHLASH</button>
+            <button id="restartBtn" class="restart-btn">↻ QAYTA BOSHLASH</button>
+        </div>
+
+    </main>
+
+    <div class="rules">
+        <h3>📌 O‘yin qoidalari</h3>
+        <p>🟡 Qahramon — sen boshqaradigan belgi.</p>
+        <p>⬛ Devor — undan o‘tib bo‘lmaydi.</p>
+        <p>🏁 Chiqish — maqsading!</p>
+        <p>Klaviaturadagi yo‘nalish tugmalaridan ham foydalanishing mumkin.</p>
+    </div>
+
+    <footer>AKRAMJONOVA JADRA MARATOVNA</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
